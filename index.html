@@ -9,31 +9,30 @@
     <title>30 Days Final Task</title>
     <meta name="keywords" content="30Days Final Task"/>
     <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <link rel="stylesheet" href="scss/hiraku.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
-<body class="drawer drawer--right">
-    <button type="button" class="drawer-toggle drawer-hamburger">
-        <div class="hamburger">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-        </div>
+<body>
+    <button class="hiraku-open-btn offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+        <span class="hiraku-open-btn-line"></span>
     </button>
-    <nav class="drawer-nav" role="navigation">
-        <ul class="drawer-menu">
-          <li><a class="drawer-menu-item drawer-toggle" href="#news-link">News</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#service-link">Service</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#results-link">Results</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#price-link">Price</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#comments-link">Comments</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#faqs-link">FAQs</a></li>
-          <li><a class="drawer-menu-item drawer-toggle" href="#contact-link">Contact</a></li>
+    <div class="offcanvas-right">
+        <ul class="hiraku-menu">
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#news-link">News</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#service-link">Service</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#results-link">Results</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#price-link">Price</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#comments-link">Comments</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#faqs-link">FAQs</a></li>
+          <li><a class="hiraku-menu-item hiraku-toggle" href="#contact-link">Contact</a></li>
         </ul>
-    </nav>
+    </div>
     <header class="header-section">
         <div class="inner">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="ロゴ"></a>
+            </div>
             <div class="nav-bar">
                 <ul class="nav-items">
                     <li><a href="#news-link">News</a></li>
@@ -47,9 +46,40 @@
             </div>
         </div>
     </header>
+    <section class="mainvisual-section">
+        <img src="images/mainvisual.jpg" alt="メイン">
+        <div class="mainvisual-text">
+            <h2>詩が生れて、画が出来る。 <br>とかくに人の世は住みにくい。</h2>
+            <h3>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</h3>
+            <a href="#contact-link">お問い合わせしてみる</a>
+        </div>
+    </section>
+    <section class="news-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="news-link">
+        <div class="news-contents">
+            <h3>News</h3>
+            <div class="news-content">
+                <time>2019-02-01</time>
+                <div class="label"><a href="https://www.google.co.jp/">テキスト</a></div>
+                <div class="news-title"><a href="https://www.google.co.jp/">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
+            </div>
+            <div class="news-content">
+                <time>2019-02-01</time>
+                <div class="label"><a href="https://www.google.co.jp/">テキスト</a></div>
+                <div class="news-title"><a href="https://www.google.co.jp/">ニュースニュースニュースニュースニュースニュースニュース</a></div>
+            </div>
+            <div class="news-content">
+                <time>2019-02-01</time>
+                <div class="label"><a href="https://www.google.co.jp/">テキスト</a></div>
+                <div class="news-title"><a href="https://www.google.co.jp/">ニュースニュースニュースニュースニュースニュースニュース</a></div>
+            </div>
+            <div class="more"><a href="https://www.google.co.jp/">MORE</a></div>
+        </div>
+    </section>
+    <section class="service-section">
+        
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script type="text/javascript" src="js/hiraku.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
