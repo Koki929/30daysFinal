@@ -1,203 +1,364 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- description -->
-    <meta name="description" content="30Days Final Task">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>30 Days Final Task</title>
-    <meta name="keywords" content="30Days Final Task"/>
-    <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="scss/hiraku.css">
-    <link rel="stylesheet" href="scss/slick-theme.css">
-    <link rel="stylesheet" href="scss/slick.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- description -->
+	<meta name="description" content="30Days Final Task">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>30 Days Final Task</title>
+	<meta name="keywords" content="30Days Final Task"/>
+	<link rel="stylesheet" href="scss/style.css">
+	<link rel="stylesheet" href="scss/animate.css">
+	<link rel="stylesheet" href="scss/hiraku.css">
+	<link rel="stylesheet" href="scss/slick-theme.css">
+	<link rel="stylesheet" href="scss/slick.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="hiraku-open-btn offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
-        <span class="hiraku-open-btn-line"></span>
-    </button>
-    <div class="offcanvas-right">
-        <ul class="hiraku-menu">
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#news-link">News</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#service-link">Service</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#results-link">Results</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#price-link">Price</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#comments-link">Comments</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#faqs-link">FAQs</a></li>
-          <li><a class="hiraku-menu-item hiraku-toggle" href="#contact-link">Contact</a></li>
-        </ul>
-    </div>
-    <header class="header-section">
-        <div class="inner">
-            <div class="logo">
-                <a href="#"><img src="images/logo.png" alt="ロゴ"></a>
-            </div>
-            <div class="nav-bar">
-                <ul class="nav-items">
-                    <li><a href="#news-link">News</a></li>
-                    <li><a href="#service-link">Service</a></li>
-                    <li><a href="#results-link">Results</a></li>
-                    <li><a href="#price-link">Price</a></li>
-                    <li><a href="#comments-link">Comments</a></li>
-                    <li><a href="#faqs-link">FAQs</a></li>
-                    <li><a href="#contact-link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <section class="mainvisual-section">
-        <img src="images/mainvisual.jpg" alt="メイン">
-        <div class="mainvisual-text">
-            <h2>詩が生れて、画が出来る。 <br>とかくに人の世は住みにくい。</h2>
-            <h3>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</h3>
-            <a href="#contact-link">お問い合わせしてみる</a>
-        </div>
-    </section>
-    <section class="news-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="news-link">
-        <div class="news-contents">
-            <h3>News</h3>
-            <div>
-                <a href="#" class="news-content">
-                    <time>2019-02-01</time>
-                    <div class="label">テキスト</div>
-                    <div class="news-title">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="news-content">
-                    <time>2019-02-01</time>
-                    <div class="label">テキスト</div>
-                    <div class="news-title">ニュースニュースニュースニュースニュースニュースニュース</div>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="news-content news-content-last">
-                    <time>2019-02-01</time>
-                    <div class="label">テキスト</div>
-                    <div class="news-title">ニュースニュースニュースニュースニュースニュースニュース</div>
-                </a>
-            </div>
-            <div class="more"><a href="https://www.google.co.jp/">MORE</a></div>
-        </div>
-    </section>
-    <section class="service-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" >
-        <div class="service-cover">
-            <h3>Service</h3>
-        </div>
-        <div class="service-contents">
-            <div class="service-content">
-                <div class="service-image"><img src="images/service1.svg" alt="サービス1"></div>
-                <h4>WEB<br>DESIGN</h4>
-                <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-            </div>
-            <div class="service-content">
-                <div class="service-image"><img src="images/service2.svg" alt="サービス1"></div>
-                <h4>WEB<br>CODING</h4>
-                <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-            </div>
-            <div class="service-content">
-                <div class="service-image"><img src="images/service3.svg" alt="サービス1"></div>
-                <h4>CMS<br>CUSTOMIZE</h4>
-                <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-            </div>
-        </div>
-    </section>
-    <section class="results-section">
-        <div class="results-contents">
-            <h3>Results</h3>
-            <div class="results-sliders">
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="PC">
-                    <div class="results-text">
-                        <h4>とかくに人の世は住みにくい。</h4>
-                        <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="results-button"><a href="https://www.google.co.jp/">VIEW ALL</a></div>
-        </div>
-    </section>
-    <section class="price wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="price-link">
-        <h2>Price</h2>
-        <hr>
-        <div class="price-items">
-            <div class="price-image">
-                <img src="images/price-img.png" alt="女性">
-            </div>
-            <div class="price-contents">
-                <table class="price-table">
-                    <tr>
-                        <th class="grey"></th>
-                        <td class="grey">column1</td>
-                        <td class="grey">column2</td>
-                    </tr>
-                    <tr>
-                        <th class="grey">row1</th>
-                        <td>100円</td>
-                        <td>100円</td>
-                    </tr>
-                    <tr>
-                        <th class="grey">row2</th>
-                        <td>6,000円</td>
-                        <td>0円</td>
-                    </tr>
-                    <tr>
-                        <th class="grey">row3</th>
-                        <td><span class="half">6,000円</span><br>※ 今だけ半額</td>
-                        <td>0円</td>
-                    </tr>
-                    <tr>
-                        <th class="row grey">row4</th>
-                        <td>100円</td>
-                        <td>100円</td>
-                    </tr>
-                </table>
-                <p>※ 目安なので詳しくは<a href="#contact-link">お問い合わせ</a>ください。</p>
-            </div>
-        </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/hiraku.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+	<button class="hiraku-open-btn offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+		<span class="hiraku-open-btn-line"></span>
+	</button>
+	<div class="offcanvas-right">
+		<ul class="hiraku-menu">
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#news-link">News</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#service-link">Service</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#results-link">Results</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#price-link">Price</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#comments-link">Comments</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#faqs-link">FAQs</a></li>
+			<li><a class="hiraku-menu-item hiraku-toggle" href="#contact-link">Contact</a></li>
+		</ul>
+	</div>
+	<header class="header-section">
+		<div class="inner">
+			<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="ロゴ"></a>
+			</div>
+			<div class="nav-bar">
+					<ul class="nav-items">
+						<li><a href="#news-link">News</a></li>
+						<li><a href="#service-link">Service</a></li>
+						<li><a href="#results-link">Results</a></li>
+						<li><a href="#price-link">Price</a></li>
+						<li><a href="#comments-link">Comments</a></li>
+						<li><a href="#faqs-link">FAQs</a></li>
+						<li><a href="#contact-link">Contact</a></li>
+					</ul>
+			</div>
+		</div>
+	</header>
+	<section class="mainvisual-section">
+		<img src="images/mainvisual.jpg" alt="メイン">
+		<div class="mainvisual-text">
+			<h2>詩が生れて、画が出来る。 <br>とかくに人の世は住みにくい。</h2>
+			<h3>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</h3>
+			<a href="#contact-link">お問い合わせしてみる</a>
+		</div>
+	</section>
+	<section class="news-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="news-link">
+		<div class="news-contents">
+			<h3>News</h3>
+			<div>
+					<a href="#" class="news-content">
+						<time>2019-02-01</time>
+						<div class="label">テキスト</div>
+						<div class="news-title">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+					</a>
+			</div>
+			<div>
+					<a href="#" class="news-content">
+						<time>2019-02-01</time>
+						<div class="label">テキスト</div>
+						<div class="news-title">ニュースニュースニュースニュースニュースニュースニュース</div>
+					</a>
+			</div>
+			<div>
+					<a href="#" class="news-content news-content-last">
+						<time>2019-02-01</time>
+						<div class="label">テキスト</div>
+						<div class="news-title">ニュースニュースニュースニュースニュースニュースニュース</div>
+					</a>
+			</div>
+			<div class="more"><a href="https://www.google.co.jp/">MORE</a></div>
+		</div>
+	</section>
+	<section class="service-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="service-link">
+		<div class="service-cover">
+			<h3>Service</h3>
+		</div>
+		<div class="service-contents">
+			<div class="service-content">
+					<div class="service-image"><img src="images/service1.svg" alt="サービス1"></div>
+					<h4>WEB<br>DESIGN</h4>
+					<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+			</div>
+			<div class="service-content">
+					<div class="service-image"><img src="images/service2.svg" alt="サービス1"></div>
+					<h4>WEB<br>CODING</h4>
+					<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+			</div>
+			<div class="service-content">
+					<div class="service-image"><img src="images/service3.svg" alt="サービス1"></div>
+					<h4>CMS<br>CUSTOMIZE</h4>
+					<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+			</div>
+		</div>
+	</section>
+	<section class="results-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="results-link">
+		<div class="results-contents">
+			<h3>Results</h3>
+			<div class="results-sliders">
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/results.jpg" alt="PC">
+						<div class="results-text">
+							<h4>とかくに人の世は住みにくい。</h4>
+							<p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+						</div>
+					</div>
+			</div>
+			<div class="results-button"><a href="https://www.google.co.jp/">VIEW ALL</a></div>
+		</div>
+	</section>
+	<section class="price-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="price-link">
+		<h2>Price</h2>
+		<div class="price-table">
+			<table>
+					<tr>
+						<th>row 1</th>
+						<td>Price￥10,000</td>
+					</tr>
+					<tr>
+						<th>row 2</th>
+						<td>Price￥10,000</td>
+					</tr>
+					<tr>
+						<th>row 3</th>
+						<td>Price￥10,000</td>
+					</tr>
+			</table>
+			<p>※ 上記料金はサンプルです。</p>
+		</div>
+	</section>
+	<section class="comments-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="comments-link">
+		<div class="comments-bg"></div>
+		<div class="comments-contents">
+			<h2>Comments</h2>
+			<div class="comments-content">
+					<img src="images/comments1.jpg" alt="コメント1">
+					<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+			</div>
+			<div class="comments-content">
+					<img src="images/comments2.jpg" alt="コメント2">
+					<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+			</div>
+			<div class="comments-image">
+					<img src="images/comments3.png" alt="コメントイメージ">
+			</div>
+		</div>
+	</section>
+	<section class="qa-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="faqs-link">
+		<h2>Q&A</h2>
+		<ul class="accordion">
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？<br>また、質問は質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+			<li>
+					<div class="ac">
+						<span class="q">Q</span>
+						<p>質問質問質問？</p>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+					<ul class="inner">
+						<div class="content">
+							<p>回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+						</div>
+					</ul>
+			</li>
+		</ul>
+	</section>
+	<section class="access-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="access-link">
+		<div class="access-contents">
+			<h2>Access</h2>
+			<p>〒106-6126<br>東京都港区六本木 6丁目 10-1<br>六本木ヒルズ森タワー</p>
+			<a href="https://goo.gl/maps/VYuKPysoNJoutxJ39" target="_blank">Google Maps</a>
+		</div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12967.051489559555!2d139.72221153460998!3d35.65821350755188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b770913970d%3A0xccc3467fcb15b353!2zR29vZ2xl5ZCI5ZCM5Lya56S-44O75YWt5pys5pyo44Kq44OV44Kj44K5!5e0!3m2!1sja!2sjp!4v1581773107927!5m2!1sja!2sjp" width="720" height="515" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+	</section>
+	<section class="contact-section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="200" id="contact-link">
+		<div class="contact-bg">
+			<div class="contact-bg-contents">
+				<h2>Contact Us</h2>
+				<p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</p>
+			</div>
+		</div>
+		<form class="contact-items">
+			<div class="contact-type">
+				<div class="type-header">
+					<h3>お問い合わせ種別</h3>
+				</div>
+				<div class="type-content">
+					<select>
+						<option>選択してください</option>
+						<option>セレクトA</option>
+						<option>セレクトB</option>
+						<option>セレクトC</option>
+					</select>
+				</div>
+			</div>
+			<div class="contact-name">
+				<div class="name-header">
+					<h3 class="name-header-h3-1">氏名</h3>
+					<p class="required">必須</p>
+				</div>
+				<div class="name-content">
+					<input type="text" placeholder="氏名">
+				</div>
+			</div>
+			<div class="contact-name">
+				<div class="name-header">
+					<h3 class="name-header-h3-2">フリガナ</h3>
+					<p class="required">必須</p>
+				</div>
+				<div class="name-content">
+					<input type="text" placeholder="フリガナ">
+				</div>
+			</div>
+			<div class="contact-mail">
+				<h3>メールアドレス</h3>
+				<div class="mail-content">
+					<input type="email" placeholder="sample@gmail.com">
+				</div>
+			</div>
+			<div class="contact-radio">
+				<h3>性別</h3>
+				<div class="radio-content">
+					<label><input type="radio" name="radio-name"><span>男性</span></label>
+					<label><input type="radio" name="radio-name"><span>女性</span></label>
+				</div>
+			</div>	
+			<div class="contact-text">
+				<h3>メッセージ</h3>
+				<div class="text-content">
+					<textarea></textarea>
+				</div>
+			</div>
+			<div class="contact-check">
+				<label><input type="checkbox" name="check-name"><span></span></label>
+				<p>個人情報保護方針に同意する</p>
+			</div>
+			<div class="contact-submit">
+				<input type="submit" value="送信する">
+			</div>
+		</form>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/hiraku.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

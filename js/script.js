@@ -16,3 +16,25 @@ $('.results-sliders').slick({
 
 // Wow
 new WOW().init();
+
+// Smooth Scroll
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var adjust = 0;
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+});
+
+// accordion
+$(function(){
+	$('.ac').click(function(){
+        $(this).next('ul').slideToggle();
+        $(this).find('.line2').toggleClass('open');
+        $(this).toggleClass('open');
+	});
+});
