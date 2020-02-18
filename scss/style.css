@@ -50,7 +50,7 @@ a {
 .header-section {
   background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
@@ -111,12 +111,10 @@ a {
   color: #3E3E3E;
   font-size: 16px;
   padding: 0 6px 3px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .header-section .inner .nav-bar .nav-items a:hover {
-  border-bottom: solid 1.5px #3E3E3E;
+  border-bottom: solid 1.5px #747474;
 }
 
 /*========= main visual ===========*/
@@ -1281,5 +1279,93 @@ a {
 .contact-section .contact-items .contact-submit input::-moz-focus-inner {
   border: none;
   padding: 0;
+}
+
+/*========= Footer ===========*/
+.footer-section {
+  padding: 120px 93px 119.5px;
+  background-color: #3E3E3E;
+  position: relative;
+  height: 424.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-section .footer-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-section .footer-contents .footer-left .footer-sns {
+  margin-bottom: 40px;
+}
+
+.footer-section .footer-contents .footer-left .footer-sns a {
+  color: #B1B1B1;
+  font-size: 36px;
+}
+
+.footer-section .footer-contents .footer-left .footer-sns .twitter {
+  margin-right: 20px;
+}
+
+.footer-section .footer-contents .footer-left .footer-link div {
+  margin-bottom: 20px;
+}
+
+.footer-section .footer-contents .footer-left .footer-link div a {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.footer-section .footer-contents .footer-left .footer-link div a:hover {
+  border-bottom: solid 1.5px #747474;
+}
+
+.footer-section .footer-contents .footer-left .footer-privacy a {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.footer-section .footer-contents .footer-left .footer-privacy a:hover {
+  border-bottom: solid 1.5px #747474;
+}
+
+.footer-section .footer-contents .footer-right {
+  text-align: right;
+}
+
+.footer-section .footer-contents .footer-right h2 {
+  font-size: 44px;
+  color: #E3E3E3;
+  margin-bottom: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.footer-section .footer-contents .footer-right p {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.footer-section .back-to-top a {
+  position: absolute;
+  right: 93px;
+  bottom: 38.5px;
+  background-color: #D8D8D8;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.footer-section .back-to-top a i {
+  color: #3E3E3E;
+  font-size: 32px;
+  line-height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
