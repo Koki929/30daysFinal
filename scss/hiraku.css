@@ -133,6 +133,7 @@
 @media (max-width:767px) {
 	.hiraku-open-btn {
 		display: block;
+		position: fixed;
 	}
 }
 
