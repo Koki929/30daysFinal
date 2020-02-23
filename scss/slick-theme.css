@@ -119,6 +119,12 @@
     margin-bottom: 116px;
 }
 
+@media (max-width:767px) {
+	.slick-dotted.slick-slider {
+        margin-bottom: 84px;
+	}
+}
+
 .slick-dots
 {
     position: absolute;
@@ -133,8 +139,16 @@
 
     list-style: none;
 
-
 }
+
+@media (max-width:767px) {
+	.slick-dots {
+        top: 210px;
+        left: 50%;
+        transform: translateX(-25%);
+	}
+}
+
 .slick-dots li
 {
     position: relative;

@@ -46,21 +46,6 @@ $breakpoints: (
   }
 }
 
-/*========= hiraku ===========*/
-.offcanvas-right {
-	.hiraku-menu {
-		text-align: center;
-		padding-top: 197px;
-		li {
-			margin-bottom: 20px;
-			.hiraku-menu-item {
-					color: $black;
-					font-size: 18px;
-			}
-		}
-	}
-}
-
 /*========= header ===========*/
 .header-section {
 	background-color: rgba(255,255,255,.2);
@@ -69,6 +54,19 @@ $breakpoints: (
 	z-index: 2;
 	@include mq('sp') {
 		background-color: #F4F4F5;
+	}
+	.offcanvas-right {
+		.hiraku-menu {
+			text-align: center;
+			padding-top: 197px;
+			li {
+				margin-bottom: 20px;
+				.hiraku-menu-item {
+						color: $black;
+						font-size: 18px;
+				}
+			}
+		}
 	}
 	.inner {
 		height: 80px;
@@ -417,6 +415,9 @@ $breakpoints: (
 	background-color: $grey;
 	position: relative;
 	overflow: hidden;
+	@include mq('sp') {
+		height: 546px;
+	}
 	.results-contents {
 		height: 832px;
 		background-color: $black;
@@ -426,37 +427,74 @@ $breakpoints: (
 		width: 93%;
 		box-sizing: border-box;
 		padding: 80px 0 80px 110px;
+		@include mq('tab') {
+			width: 100%;
+		}
+		@include mq('sp') {
+			height: 546px;
+			padding: 40px 0 40px;
+		}
 		h3 {
 			color: $white;
 			font-size: 36px;
 			font-weight: bold;
 			margin-bottom: 80px;
-		}
-		.results-sliders {       
-			img {
-				width: 422px; 
-				height: 234px; 
+			@include mq('sp') {
+				font-size: 30px;
+				text-align: center;
+				margin-bottom: 40px;
 			}
 		}
-		.results-text {
-			padding: 20px;
-			background-color: $white;
-			width: 422px;
-			box-sizing: border-box;
-			h4 {
-				font-size: 20px;
-				color: $black;
-				margin-bottom: 20px;
-				font-weight: bold;
+		.results-sliders {
+			@include mq('sp') {
+				margin-left: 16px;
 			}
-			p {
-				font-size: 16px;
-				color: $black;
+			.results-slider {
+				width: 422px;
+				img {
+					width: 422px; 
+					height: 234px;
+					@include mq('sp') {
+						width: 276px;
+						height: 155px;
+					}
+				}
+			}
+			.results-text {
+				padding: 20px;
+				background-color: $white;
+				width: 422px;
+				box-sizing: border-box;
+				@include mq('sp') {
+					width: 276px;
+					padding: 12px;
+				}
+				h4 {
+					font-size: 20px;
+					color: $black;
+					margin-bottom: 20px;
+					font-weight: bold;
+					@include mq('sp') {
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+				}
+				p {
+					font-size: 16px;
+					color: $black;
+					@include mq('sp') {
+						font-size: 12px;
+					}
+				}
 			}
 		}
 		.results-button {
 			text-align: center;
 			width: 248px;
+			@include mq('sp') {
+				width: 92%;
+				margin: 0 auto;
+			}
 			a {
 				display: inline-block;
 				color: $white;
@@ -469,6 +507,12 @@ $breakpoints: (
 				box-sizing: border-box;
 				border: 1px solid $white;
 				transition: all 0.3s ease 0s;
+				@include mq('sp') {
+					width: 100%;
+					height: 54px;
+					line-height: 54px;
+					font-size: 18pxs;
+				}
 				&:hover {
 					color: $white;
 					background-color: $black;
@@ -768,6 +812,14 @@ $breakpoints: (
 	height: 775px;
 	position: relative;
 	overflow: hidden;
+	@include mq('tab') {
+		height: 80vw;
+		max-height: 760px;
+	}
+	@include mq('sp') {
+		height: 153vw;
+		max-height: 805px;
+	}
 	.access-contents {
 		position: absolute;
 		background-color: $black;
@@ -777,16 +829,54 @@ $breakpoints: (
 		top: 0;
 		left: 0;
 		padding: 130px 0 0 93px;
+		@include mq('tab') {
+			width: 100%;
+			height: 100%;
+			padding: 40px 0 40px;
+			text-align: center;
+		}
+		@include mq('sp') {
+			text-align: left;
+			padding: 40px 0 40px 16px;
+		}
 		h2 {
 			color: $white;
 			font-size: 36px;
 			font-weight: 600;
 			margin-bottom: 40px;
+			@include mq('tab') {
+				font-size: 30px;
+			}
 		}
 		p {
 			color: $white;
 			font-size: 16px;
 			margin-bottom: 40px;
+			@include mq('tab') {
+				font-size: 12px;
+				margin-bottom: 19px;
+			}
+		}
+		.map {
+			position: absolute;
+			overflow: hidden;
+			top: 130px;
+			left: 554px;
+			width: 52.7vw;
+			height: 37.7vw;
+			@include mq('tab') {
+				position: static;
+				margin: 0 auto 40px;
+			}
+			@include mq('sp') {
+				margin: 0 0 40px 0;
+				width: 91.4vw;
+				height: 64.2vw;
+			}
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
 		}
 		a {
 			display: inline-block;
@@ -804,12 +894,16 @@ $breakpoints: (
 				color: $black;
 				border: 1px solid $grey;
 			}
+			@include mq('tab') {
+				margin-bottom: 40px;
+			}
+			@include mq('sp') {
+				font-size: 18px;
+				width: 91.4vw;
+				height: 54px;
+				line-height: 54px;
+			}
 		}
-	}
-	.map {
-		position: absolute;
-		top: 130px;
-		left: 554px;
 	}
 }
 
@@ -821,6 +915,10 @@ $breakpoints: (
 	background-position: center;
 	height: 1216px;
 	box-sizing: border-box;
+	@include mq('tab') {
+		padding: 40px 0 40px;
+		height: auto;
+	}
 	.contact-bg	{
 		background-image: url(../images/contacts2.jpg);
 		background-size: cover;
@@ -830,34 +928,60 @@ $breakpoints: (
 		box-sizing: border-box;
 		margin: 0 auto;
 		border-radius: 12px 12px 0px 0px;
+		@include mq('tab') {
+			width: 80%;
+		}
+		@include mq('sp') {
+			width: 92%;
+			height: 160px;
+		}
 		.contact-bg-contents {
 			background-color: rgba(0,0,0,0.6);
 			height: 200px;
 			padding: 61.5px 0;
 			box-sizing: border-box;
 			border-radius: 12px 12px 0px 0px;
+			@include mq('sp') {
+				padding: 32px 16px 36px;
+				height: 160px;
+			}
 			h2 {
 				color: $white;
 				font-size: 36px;
 				font-weight: 600;
 				text-align: center;
 				margin-bottom: 12px;
+				@include mq('sp') {
+					font-size: 30px;
+					margin-bottom: 10px;
+				}
 			}
 			p {
 				color: $white;
 				font-size: 16px;
 				text-align: center;
+				@include mq('sp') {
+					font-size: 14px;
+					text-align: left;
+				}
 			}
 		}
 	}
 	.contact-items {
-	  background-color: #FFFFFF;
-	  color: $black;
-	  margin: 0 auto;
-	  width: 960px;
-	  padding: 60px 90px;
-	  box-sizing: border-box;
-	  border-radius: 0 0 12px 12px;
+		background-color: #FFFFFF;
+		color: $black;
+		margin: 0 auto;
+		width: 960px;
+		padding: 60px 90px;
+		box-sizing: border-box;
+		border-radius: 0 0 12px 12px;
+		@include mq('tab') {
+			width: 80%;
+		}
+		@include mq('sp') {
+			width: 92%;
+			padding: 40px 16px;
+		}
 	  	.contact-type {
 			display: flex;
 			margin-bottom: 40px;
@@ -873,6 +997,9 @@ $breakpoints: (
 					margin-right: 99px;
 					@include mq('tab') {
 						margin: 0;
+					}
+					@include mq('sp') {
+						font-size: 16px;
 					}
 				}
 			}
@@ -924,11 +1051,19 @@ $breakpoints: (
 					font-size: 22px;
 					color: $black;
 					margin-right: 96px;
+					@include mq('sp') {
+						font-size: 16px;
+						margin-right: 20px;
+					}
 				}
 				.name-header-h3-2 {
 					font-size: 22px;
 					color: $black;
 					margin-right: 52px;
+					@include mq('sp') {
+						font-size: 16px;
+						margin-right: 20px;
+					}
 				}
 				p {
 					display: inline-block;
@@ -939,6 +1074,11 @@ $breakpoints: (
 					text-align: center;
 					width: 55px;
 					height: 24px;
+					@include mq('sp') {
+						font-size: 14px;
+						width: 50px;
+						height: 22px;
+					}
 				}
 			}
 			.name-content {
@@ -976,6 +1116,9 @@ $breakpoints: (
 					@include mq('tab') {
 						width: 100%;
 					}
+					@include mq('sp') {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -990,6 +1133,9 @@ $breakpoints: (
 				font-size: 22px;
 				color: $black;
 				margin-right: 121px;
+				@include mq('sp') {
+					font-size: 16px;
+				}
 			}
 			.mail-content {
 				input {
@@ -1025,6 +1171,9 @@ $breakpoints: (
 					@include mq('tab') {
 						width: 100%;
 					}
+					@include mq('sp') {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -1039,13 +1188,14 @@ $breakpoints: (
 				font-size: 22px;
 				color: $black;
 				margin-right: 231px;
+				@include mq('sp') {
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
 			}
 			.radio-content {
 				label:first-child span {
 					margin: 0;
-					@include mq('sp') {
-					margin: 0 0 10px 0;
-					}
 				}
 				input {
 					display: none;
@@ -1059,12 +1209,17 @@ $breakpoints: (
 					font-size: 22px;
 					color: $black;
 					transition: all 0.3s ease 0s;
+					@include mq('sp') {
+						font-size: 16px;
+						margin: 0 0 0 90px;
+					}
 				}
 				input + span::before {
 					-webkit-transform: translateY(-50%);
 					background: #fff;
 					border: 1px solid $black;
 					border-radius: 50%;
+					box-sizing: border-box;
 					content: "";
 					display: block;
 					height: 12px;
@@ -1091,6 +1246,7 @@ $breakpoints: (
 					height: 6px;
 					left: 3px;
 					opacity: 0;
+					box-sizing: border-box;
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
@@ -1104,10 +1260,16 @@ $breakpoints: (
 		}
 		.contact-text {
 			margin-bottom: 30px;
+			@include mq('sp') {
+				margin-bottom: 20px;
+			}
 			h3 {
 				font-size: 22px;
 				color: $black;
 				margin-bottom: 10px;
+				@include mq('sp') {
+					font-size: 16px;
+				}
 			}
 			.text-content {
 				textarea {
@@ -1126,6 +1288,9 @@ $breakpoints: (
 					padding: 10px;
 					box-sizing: border-box;
 					transition: all 0.3s ease 0s;
+					@include mq('sp') {
+						height: 160px;
+					}
 					&:hover {
 						box-shadow: 0 0 1px 1px rgba(73, 115, 255, 0.6);
 						border: 1px solid rgba(73, 115, 255, 0.6);
@@ -1141,64 +1306,83 @@ $breakpoints: (
 		.contact-check {
 			display: flex;
 			margin-bottom: 30px;
-			input {
-				display: none;
+			@include mq('sp') {
+				margin-bottom: 20.5px;
 			}
-			input + span {
-				cursor: pointer;
-				display: inline-block;
-				margin-right: 21px;
-				padding: 0 0 0 1.2em;
-				position: relative;
-			}
-			input + span::before {
-				-webkit-transform: translateY(-50%);
-				background: #fff;
-				border: 1px solid #707070;
-				content: "";
-				display: block;
-				height: 20px;
-				top: 50%;
-				left: 0;
-				position: absolute;
-				transform: translateY(-50%);
-				width: 20px;
-				box-sizing: border-box;
-				transition: all 0.3s ease 0s;	
-			}
-			input + span:hover:before {
-				box-shadow: 0 0 3px 1px rgba(73, 115, 255, 0.6);
-				border: 1px solid $blue;
-			}
-			input + span:active:before {
-				background-color: #D1D9F5;
-			}
-			input + span::after {
-				-webkit-transform: translateY(-50%) rotate(-45deg);
-				border-bottom: 2.4px solid $blue;
-				border-left: 2.4px solid $blue;
-				content: "";
-				display: block;
-				height: 0.4em;
-				left: 2px;
-				margin-top: -0.2em;
-				opacity: 0;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%) rotate(-45deg);
-				transition: all 0.3s ease 0s;
-				width: 0.8em;
-			}
-			input:checked + span::after {
-				opacity: 1;
+			label {
+				input {
+					display: none;
+				}
+				input + span {
+					cursor: pointer;
+					display: inline-block;
+					margin-right: 21px;
+					padding: 0 0 0 1.2em;
+					position: relative;
+				}
+				input + span::before {
+					-webkit-transform: translateY(-50%);
+					background: #fff;
+					border: 1px solid #707070;
+					content: "";
+					display: block;
+					height: 20px;
+					top: 50%;
+					left: 0;
+					position: absolute;
+					transform: translateY(-50%);
+					width: 20px;
+					box-sizing: border-box;
+					transition: all 0.3s ease 0s;	
+					@include mq('sp') {
+						height: 18px;
+						width: 18px;
+						top: -2px;
+					}
+				}
+				input + span:hover:before {
+					box-shadow: 0 0 3px 1px rgba(73, 115, 255, 0.6);
+					border: 1px solid $blue;
+				}
+				input + span:active:before {
+					background-color: #D1D9F5;
+				}
+				input + span::after {
+					-webkit-transform: translateY(-50%) rotate(-45deg);
+					border-bottom: 2.4px solid $blue;
+					border-left: 2.4px solid $blue;
+					content: "";
+					display: block;
+					height: 0.4em;
+					left: 2px;
+					margin-top: -0.2em;
+					opacity: 0;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%) rotate(-45deg);
+					transition: all 0.3s ease 0s;
+					width: 0.8em;
+					@include mq('sp') {
+						top: -2px;
+					}
+				}
+				input:checked + span::after {
+					opacity: 1;
+				}
 			}
 			p {
 				font-size: 18px;
 				color: $black;
+				@include mq('sp') {
+					font-size: 16px;
+				}
 			}
 		}
 		.contact-submit {
 			position: relative;
+			@include mq('sp') {
+				text-align: center;
+			}
 			input {
 				-webkit-appearance: none;
 				background-color: $orange;
@@ -1216,6 +1400,9 @@ $breakpoints: (
 				box-shadow: 0px 3px 5px #CCC;
 				font-family: "游ゴシック", "Yu Gothic", YuGothic, "游ゴシック体", sans-serif;
 				transition: all 0.3s ease 0s;
+				@include mq('sp') {
+					width: 121px;
+				}
 				&:hover {
 					background-color: #F18900;
 				}
@@ -1239,9 +1426,16 @@ $breakpoints: (
 	position: relative;
 	height: 424.5px;
 	box-sizing: border-box;	
+	@include mq('sp') {
+		padding: 60px 39px 92px 32px;
+	}
 	.footer-contents {
 		display: flex;
 		justify-content: space-between;
+		@include mq('sp') {
+			display: block;
+			text-align: center;
+		}
 		.footer-left {
 			.footer-sns {
 				margin-bottom: 40px;
@@ -1251,24 +1445,45 @@ $breakpoints: (
 				}
 				.twitter {
 					margin-right: 20px;
+					@include mq('sp') {
+						margin-right: 132px;
+					}
 				}				
 			}
 			.footer-link {
+				@include mq('sp') {
+					display: flex;
+					justify-content: center;
+				}
 				div {
 					margin-bottom: 20px;
 					a {
 						font-size: 18px;
-						color: $white;						
+						color: $white;
+						@include mq('sp') {
+							font-size: 14px;
+						}					
 						&:hover {
 							border-bottom: solid 1.5px #747474;
 						}
 					}
 				}
+				.site-map {
+					@include mq('sp') {
+						margin-right: 68px;
+					}
+				}
 			}
 			.footer-privacy {
+				@include mq('sp') {
+					margin-bottom: 55px;
+				}
 				a {
 					font-size: 18px;
 					color: $white;
+					@include mq('sp') {
+						font-size: 14px;
+					}
 					&:hover {
 						border-bottom: solid 1.5px #747474;
 					}
@@ -1277,12 +1492,21 @@ $breakpoints: (
 		}
 		.footer-right {
 			text-align: right;
+			@include mq('sp') {
+				text-align: center;
+			}
 			h2 {
 				font-size: 44px;
 				color: #E3E3E3;
 				margin-bottom: 18px;
 				font-family: sans-serif;
 				font-weight: 100;
+				@include mq('tab') {
+					font-size: 32px;
+				}
+				@include mq('sp') {
+					margin-bottom: 8px;
+				}
 			}
 			p {
 				font-size: 12px;
@@ -1300,6 +1524,10 @@ $breakpoints: (
 			height: 50px;
 			width: 50px;
 			text-align: center;
+			@include mq('sp') {
+				right: 16px;
+				bottom: 16px;
+			}
 			i {
 				color: $black;
 				font-size: 32px;
