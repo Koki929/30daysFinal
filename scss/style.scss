@@ -161,7 +161,7 @@ $breakpoints: (
 			font-weight: bold;
 			border-radius: 10px;
 			text-align: center;
-			box-shadow: 0px 3px 5px #3E3E3E33;
+			box-shadow: 0px 3px 5px #3E3E3E;
 			transition: all 0.3s ease 0s;
 			&:hover {
 				background-color: #F18900;
@@ -193,7 +193,7 @@ $breakpoints: (
 		box-sizing: border-box;
 		margin: 0 auto;
 		background-color: $white;
-		box-shadow: 0px 5px 12px #3E3E3E33;
+		box-shadow: 0px 5px 12px #3E3E3E;
 		padding: 60px 50px 40px;
 		@include mq('sp') {
 			padding: 40px 0 40px;
@@ -356,7 +356,7 @@ $breakpoints: (
 		height: 321px;
 		display: flex;
 		justify-content: center;
-		box-shadow: 0px 5px 12px #3E3E3E33;
+		box-shadow: 0px 5px 12px #3E3E3E;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -450,12 +450,14 @@ $breakpoints: (
 				margin-left: 16px;
 			}
 			.results-slider {
-				width: 422px;
+				width: 600px;
 				img {
-					width: 422px; 
+					margin-right: 100px;
+					width: 600px; 
 					height: 234px;
+					object-fit: cover;
 					@include mq('sp') {
-						width: 276px;
+						width: 320px;
 						height: 155px;
 					}
 				}
@@ -463,10 +465,11 @@ $breakpoints: (
 			.results-text {
 				padding: 20px;
 				background-color: $white;
-				width: 422px;
+				width: 600px;
 				box-sizing: border-box;
+				margin-right: 100px;
 				@include mq('sp') {
-					width: 276px;
+					width: 320px;
 					padding: 12px;
 				}
 				h4 {
@@ -482,7 +485,7 @@ $breakpoints: (
 				p {
 					font-size: 16px;
 					color: $black;
-					@include mq('sp') {
+					@include mq('tab') {
 						font-size: 12px;
 					}
 				}

@@ -189,8 +189,8 @@ a {
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
-  -webkit-box-shadow: 0px 3px 5px #3E3E3E33;
-          box-shadow: 0px 3px 5px #3E3E3E33;
+  -webkit-box-shadow: 0px 3px 5px #3E3E3E;
+          box-shadow: 0px 3px 5px #3E3E3E;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -235,8 +235,8 @@ a {
           box-sizing: border-box;
   margin: 0 auto;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 5px 12px #3E3E3E33;
-          box-shadow: 0px 5px 12px #3E3E3E33;
+  -webkit-box-shadow: 0px 5px 12px #3E3E3E;
+          box-shadow: 0px 5px 12px #3E3E3E;
   padding: 60px 50px 40px;
 }
 
@@ -468,8 +468,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 5px 12px #3E3E3E33;
-          box-shadow: 0px 5px 12px #3E3E3E33;
+  -webkit-box-shadow: 0px 5px 12px #3E3E3E;
+          box-shadow: 0px 5px 12px #3E3E3E;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -601,17 +601,20 @@ a {
 }
 
 .results-section .results-contents .results-sliders .results-slider {
-  width: 422px;
+  width: 600px;
 }
 
 .results-section .results-contents .results-sliders .results-slider img {
-  width: 422px;
+  margin-right: 100px;
+  width: 600px;
   height: 234px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
   .results-section .results-contents .results-sliders .results-slider img {
-    width: 276px;
+    width: 320px;
     height: 155px;
   }
 }
@@ -619,14 +622,15 @@ a {
 .results-section .results-contents .results-sliders .results-text {
   padding: 20px;
   background-color: #FFFFFF;
-  width: 422px;
+  width: 600px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-right: 100px;
 }
 
 @media screen and (max-width: 767px) {
   .results-section .results-contents .results-sliders .results-text {
-    width: 276px;
+    width: 320px;
     padding: 12px;
   }
 }
@@ -650,7 +654,7 @@ a {
   color: #3E3E3E;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1104px) {
   .results-section .results-contents .results-sliders .results-text p {
     font-size: 12px;
   }

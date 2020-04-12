@@ -141,7 +141,7 @@
 
 }
 
-@media (max-width:767px) {
+@media (max-width:1104px) {
 	.slick-dots {
         top: 210px;
         left: 50%;
@@ -194,7 +194,7 @@
 {
     font-family: 'slick';
     font-size: 26px;
-    line-height: 12px;
+    line-height: 7px;
 
     position: absolute;
     top: 68px;

@@ -43,7 +43,7 @@ $('.results-sliders').slick({
     infinite: true, //スライドのループ有効化
     dots:true, //ドットのナビゲーションを表示
     autoplay:true, //自動再生
-    slidesToShow: 3
+    slidesToShow: 1
 });
 
 // Wow
